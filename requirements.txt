@@ -1,0 +1,6 @@
+yt-dlp>=2025.7.21
+faster-whisper==1.2.1
+av==12.3.0
+# 注意：av 必须钉在 12.3.0。新版 av（19.x）会让 faster-whisper 1.2.1
+# 在读音频时报错：av.open() got an unexpected keyword argument 'metadata_errors'。
+# 这是实测踩过的坑，不要升级 av，除非同时升级 faster-whisper 并重测。
